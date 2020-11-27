@@ -3,34 +3,30 @@
 <body>
 
 
-<br><br>
-<br><br>
+<!-- <div style="background-image: url('https://html.sammy-codes.com/images/background.jpg');
+background-size: cover;; height:540px; text-align: center;"> -->
 
-<p align="center"><img src="survey.png" align="center" width="900" height="400"></p>
-<br>
-<h2 
-  align="center" 
-  display: block;
-  font-size: 2em;
-  margin-top: 100em;
-  font-weight: bold;>
+<div>
+<img src="survey.png" style="max-height:60%; width:70%; margin-left: 15%; margin-top:5%">
 
-  Welcome to our survey. 
-  This survey includes watching short videos followed by filling small questionares. It should take around 15 minutes to complete this survey.
+<h2 style="font-size:30px; color:black; margin:50px;"> Welcome to our survey. 
+  This survey includes watching short videos followed by filling small questionares. It should take around 15 minutes to complete this survey. <br><br>
+Thank you for taking out time and contributing to our study! Click on the Start button to begin. 
+
 </h2>
-
-<br>
-<h2 align="center">
-  Thank you for taking out time and contributing to our study! Click on the Start button to begin.
-</h2>
+</div>
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1" align="center">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1" align="center"> -->
 <style>
 a {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   padding: 20px 30px;
+}
+
+div {
+  display: inline-block;
 }
 
 a:hover {
@@ -41,14 +37,19 @@ a:hover {
 .next {
   background-color: #1FB5D6;
   color: black;
-  position: absolute;
-  top: 85%;
-  right: 45%;
+  text-align: center;
+  height:20px;
+  width: 100px;
+  margin-left:40%;
+  display:inline-block;
+
 }
 
 </style>
 
-<a id = "next_link" href="p1.html" class="next">START &raquo;</a>
+
+<a id = "next_link" href="" class="next">START </a>
+
 
 <script>
 
@@ -60,6 +61,11 @@ var random = Math.floor(Math.random()*urls.length);
 
 document.getElementById("next_link").href = urls[random];
 </script>
+
+<!-- <p style="font-size: 20px; color:#1F9AFE;">
+    <a href="Webpage FilePath";> About this site </a>
+    </p> -->
+
 
 </body>
 </html>
